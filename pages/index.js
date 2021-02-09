@@ -1,29 +1,31 @@
-import {useState} from "react";
+import { useState } from "react";
 import SearchBar from "../Components/SearchBar/SearchBar";
 import CoinsList from "../Components/CoinsList/CoinsList";
-import Layout from "../Components/Layout/Layout";
-
 
 export default function Home({ filteredCoins }) {
-  const [search, setSearch] = useState ('');
+  const [search, setSearch] = useState("");
 
-const allCoins = filteredCoins.filter(coin =>
-  coin.name.toLowerCase().includes(search.toLowerCase())
+  const allCoins = filteredCoins.filter((coin) =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
-const handleChange = e =>{
-  e.preventDefault();
+  const handleChange = (e) => {
+    e.preventDefault();
 
-  setSearch(e.target.value.toLowerCase());
-};
+    setSearch(e.target.value.toLowerCase());
+  };
 
   return (
-    <Layout>
     <div className="coin_app">
-      <SearchBar type="text" placeholder="search a crypto" onChange={handleChange}/>
-      <CoinsList filteredCoins={allCoins} />
-      </div>
-    </Layout>
+      <div className="blurred-box">
+        <SearchBar
+          type="text"
+          placeholder="search a crypto"
+          onChange={handleChange}
+        />  
+        <CoinsList filteredCoins={allCoins} />
+        </div>
+    </div>
   );
 }
 export const getServerSideProps = async () => {
