@@ -18,7 +18,9 @@ export default function Home({ filteredCoins }) {
   };
 
 
- 
+  function empty(e) {
+    e.target.style.background = "none";
+  }
 
  
 
@@ -30,6 +32,8 @@ export default function Home({ filteredCoins }) {
         <SearchBar
           type="text"
           onChange={handleChange}
+          onClick = {empty}
+         
         />  
         <CoinsList filteredCoins={allCoins} />
         </div>

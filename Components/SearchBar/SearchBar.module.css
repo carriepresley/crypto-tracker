@@ -49,8 +49,8 @@
    display: flex;
     justify-content: center;
     align-items: center;
-    background: url("https://res.cloudinary.com/carriepresley/image/upload/c_scale,w_24/v1612929509/carriepresley/loupe_dac17f.png") left     no-repeat;
-   
+    
+    background: url("https://res.cloudinary.com/carriepresley/image/upload/c_scale,w_15/v1612929509/carriepresley/loupe_dac17f.png") center  no-repeat;
    
 
     
@@ -61,4 +61,5 @@
     box-shadow: 2px 2px 2px 0 #dfe4ea inset, -2px -2px 2px 0 #fff inset;
     position: relative;
     top: 1px;
+    
 }
