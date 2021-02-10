@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    width: auto;
     text-align: center;
    text-justify: center;
    padding: 33px;
@@ -20,7 +21,7 @@
     font-size: 20px;
     cursor: pointer;
     box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #fff;
-    width:500px;
+    width: 500px;
    
     height: 50px;
     text-align: center;
@@ -39,7 +40,8 @@
 .coin{
     display: flex;
     align-items: center;
-    padding-right: 24px;
+    
+    
 
 }
 
@@ -52,11 +54,14 @@
 .coin_h1{
     font-size: 16px;
     width: 150px;
+    letter-spacing: 1px;
+    
 }
 
 .coin_symbol{
     text-transform: uppercase;
     font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .coin_data{
@@ -64,6 +69,7 @@
     text-align: right;
     font-size: 16px;
     width: 100%;
+    letter-spacing: 1px;
 
 }
 
@@ -76,10 +82,14 @@
 
 .price_change{
     padding-left: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .coin_percent{
     width: 100px;
+    justify-content: right;
+   
 }
 
 .coin_percent_red{
@@ -95,12 +105,10 @@
    .coin_h1{
       display: none;
     }
-    .coin-row{
+    .coin_row{
         width: 300px;
     }
 
-.coin_container{
-    width:300px;
-} 
+
 
   }

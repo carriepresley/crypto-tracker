@@ -1,3 +1,13 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    color: grey;
+    letter-spacing: 3px;
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+}
 .coin_search{
    
     display: flex;
@@ -6,19 +16,49 @@
 
 }
 
-.coin_input{
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 20px;
-border-radius: 10px;
-outline: none;
-height: 100%;
-width: 100%;
 
+
+.coin_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    text-align: center;
+   text-justify: center;
+   padding: 20px 0px 50px 0px;
+   
 
 }
 
-.coin_input::placeholder{
-    color: white;
+.coin_input{
+    border: 0;
+    text-decoration: none;
+    padding: 10px 20px;
+    outline: transparent;
+    color: #5C5B5B;
+    border-radius: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #fff;
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    text-align: center;
+   text-justify: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://res.cloudinary.com/carriepresley/image/upload/c_scale,w_24/v1612929509/carriepresley/loupe_dac17f.png") left     no-repeat;
+   
+   
+
+    
+}
+
+
+.coin_input:hover{
+    box-shadow: 2px 2px 2px 0 #dfe4ea inset, -2px -2px 2px 0 #fff inset;
+    position: relative;
+    top: 1px;
 }
